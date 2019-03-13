@@ -67,6 +67,11 @@ MIDDLEWARE = [
 # jwt auth customize elemeliyik
 
 # django.utils.date
+# jwt ozu json web token ,
+# jwt.io >>sjson web token, api lar ucun nezerde tuttulub,
+# haslayir dtanin dasinmasi sifrelenir, sifreleyir,
+# haslayande hecne gorsenmir
+import datetime
 JWT_AUTH = {
     'JWT_ENCODE_HANDLER':
     'rest_framework_jwt.utils.jwt_encode_handler',
@@ -97,7 +102,7 @@ JWT_AUTH = {
 
     'JWT_ALLOW_REFRESH': False,
     'JWT_REFRESH_EXPIRATION_DELTA': datetime.timedelta(days=7),
-
+    # token olsn burda
     'JWT_AUTH_HEADER_PREFIX': 'Token',
     'JWT_AUTH_COOKIE': None,
 

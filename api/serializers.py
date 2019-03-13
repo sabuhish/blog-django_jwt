@@ -40,8 +40,9 @@ User = get_user_model()
 # meselen bezen gelir facebook ile login ol deyir, eslinde o gedir faccebookdan senin emailini username, parolunu siferein alir
 # json data ni gonderir, basanda artiq useri tanimis olurq
 # gedir facebooka gelir
+
+
 class AuthorSerializer(serializers.ModelSerializer):
-    author = AuthorSerializer()
     class Meta:
         model = User
         fields =("first_name", "last_name", "email")
@@ -49,6 +50,7 @@ class AuthorSerializer(serializers.ModelSerializer):
 
 
 class PostListSerializer(serializers.ModelSerializer):
+    author = AuthorSerializer()
 
     class Meta:
         model =Article

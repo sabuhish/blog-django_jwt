@@ -5,8 +5,9 @@ verify_jwt_token)
 from . import views
 """
 btain_jwt_token, refresh_jwt_token, 
-verify_jwt_token) >> bir login ucun biri tokeni yenilemek ucundur, tesd
-tesdirq ucundur
+verify_jwt_token) >> bir login ucun biri tokeni yenilemek ucundur 
+
+
 """
 app_name ="api"
 
