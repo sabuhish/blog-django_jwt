@@ -41,7 +41,7 @@ User = get_user_model()
 # json data ni gonderir, basanda artiq useri tanimis olurq
 # gedir facebooka gelir
 class AuthorSerializer(serializers.ModelSerializer):
-    autjor = AuthorSerializer()
+    author = AuthorSerializer()
     class Meta:
         model = User
         fields =("first_name", "last_name", "email")

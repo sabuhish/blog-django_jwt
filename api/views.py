@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from rest_framework.views import APIView
 from django.http import JsonResponse
-from blog_app.models import Article
+from blog_app.models import *
 from .serializers import *
 
 class TestApiview(APIView):
