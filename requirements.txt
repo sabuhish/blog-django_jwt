@@ -2,6 +2,6 @@ Django==2.1.7
 django-widget-tweaks==1.4.3
 djangorestframework==3.9.2
 djangorestframework-jwt==1.11.0
-Pillow==5.4.1
+Pillow==8.2.0
 PyJWT==1.7.1
 pytz==2018.9
